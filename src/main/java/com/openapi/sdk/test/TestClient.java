@@ -50,7 +50,7 @@ public class TestClient extends BaseClient {
             }
             response = JSONUtil.toBean(result,TestResponse.class);
         } catch (OpenApiSDKException e) {
-            throw new OpenApiSDKException("Response Message: "+result+"Error Message: "+e.getMessage());
+            throw new OpenApiSDKException("response: "+result+"errMsg: "+e.getMessage());
         }
         return response;
     }

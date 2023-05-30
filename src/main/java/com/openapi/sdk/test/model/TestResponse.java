@@ -38,8 +38,8 @@ public class TestResponse extends BaseModel {
 
 
     @Override
-    protected void toMap(HashMap<String, String> map) {
-        this.setParamSimple(map,"ip",this.ip);
-        this.setParamSimple(map,"name",this.name);
+    protected void map(HashMap<String, String> map) {
+        this.setParam(map,"ip",this.ip);
+        this.setParam(map,"name",this.name);
     }
 }

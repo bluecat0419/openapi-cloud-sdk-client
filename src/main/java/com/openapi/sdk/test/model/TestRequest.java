@@ -21,8 +21,8 @@ public class TestRequest extends BaseModel {
     }
 
     @Override
-    protected void toMap(HashMap<String, String> map) {
-        this.setParamSimple(map,"content",this.content);
+    protected void map(HashMap<String, String> map) {
+        this.setParam(map,"content",this.content);
     }
 
 }

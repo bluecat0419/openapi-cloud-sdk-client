@@ -8,11 +8,10 @@ import java.util.HashMap;
  */
 public abstract class BaseModel {
 
-    protected abstract void toMap(HashMap<String, String> var1);
+    protected abstract void map(HashMap<String, String> var1);
 
-    protected <V> void setParamSimple(HashMap<String, String> map, String key, V value) {
+    protected <V> void setParam(HashMap<String, String> map, String key, V value) {
         if (value != null) {
-            key = key.replace("_", ".");
             map.put(key, String.valueOf(value));
         }
     }

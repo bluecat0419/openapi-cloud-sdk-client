@@ -26,14 +26,13 @@ public abstract class BaseClient {
 
     protected HttpResponse doRequest(String url, BaseModel request,String method) throws OpenApiSDKException {
         HashMap<String, String> param = new HashMap();
-        request.toMap(param);
+        request.map(param);
         if(METHOD_GET.equals(method)){
-            String a = url+"?"+paramToString(param);
             return HttpRequest.get(url+"?"+paramToString(param)).addHeaders(headerMap()).execute();
         }else if (METHOD_POST.equals(method)){
             return HttpRequest.post(url).addHeaders(headerMap()).body(JSONUtil.toJsonStr(param)).execute();
         }else {
-            throw new OpenApiSDKException("Method only support (GET, POST)");
+            throw new OpenApiSDKException("only supported (GET , POST)");
         }
     }
 
