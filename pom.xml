@@ -6,7 +6,7 @@
 
     <groupId>io.github.bluecat0419</groupId>
     <artifactId>openapi-cloud-sdk-client</artifactId>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
