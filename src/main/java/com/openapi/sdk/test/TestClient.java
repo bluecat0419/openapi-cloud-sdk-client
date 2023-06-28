@@ -23,7 +23,7 @@ public class TestClient extends BaseClient {
         super(credential);
     }
 
-    public TestResponse getNameByGET(TestRequest request) throws OpenApiSDKException {
+    public TestResponse getNameByGET(TestRequest request) {
         TestResponse response;
         String result = "";
         try {
@@ -39,7 +39,7 @@ public class TestClient extends BaseClient {
         return response;
     }
 
-    public TestResponse getNameByPOST(TestRequest request) throws OpenApiSDKException {
+    public TestResponse getNameByPOST(TestRequest request) {
         TestResponse response;
         String result = "";
         try {

@@ -1,6 +1,6 @@
 package com.openapi.sdk.common.exception;
 
-public class OpenApiSDKException extends Exception{
+public class OpenApiSDKException extends RuntimeException{
 
     private static final long serialVersionUID = 1L;
 

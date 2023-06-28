@@ -6,6 +6,6 @@ package com.openapi.sdk.common.constant;
  */
 public interface SDKConstant {
 
-    String GATEWAY_HOST = "http://127.0.0.1:8000";
+    String GATEWAY_HOST = "http://47.110.32.198:8000";
 
 }
